@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>40 Street</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">40 Street</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Nosotros</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menú</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contacto</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="imgs/mainbanner.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Food & Drink</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="imgs/foodbanner.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">40 Street</h1><br>
+      <h5 class="w3-center">Tradición desde 2023</h5>
+      <p class="w3-large">¡Bienvenidos a 40 Street, tu destino de comida rápida en Envigado!
+
+Desde 2023, en 40 Street nos dedicamos a brindarte una experiencia culinaria única. Con hamburguesas jugosas, picadas deliciosas, sodas refrescantes, parrilla sabrosa y cervezas frías, nuestro menú tiene algo para todos los gustos.
+
+Ubicados en Envigado, te invitamos a disfrutar de nuestra comida rápida en un ambiente acogedor. Nuestro amable equipo está listo para atenderte y asegurarse de que tengas una experiencia memorable.
+
+¡Ven a 40 Street y descubre por qué somos el lugar perfecto para satisfacer tus antojos rápidos! "Food & Drink" es nuestro lema, así que déjanos deleitar tus sentidos con nuestros sabores extraordinarios.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Menú</h1><br>
+      <h4>Hamburguesa clásica</h4>
+      <p class="w3-text-grey">Deliciosa hamburguesa de carne jugosa con lechuga, tomate, cebolla y nuestra salsa especial. Acompañada de papas fritas. $25.000</p><br>
+    
+      <h4>Picada mixta</h4>
+      <p class="w3-text-grey">Una combinación irresistible de carnes a la parrilla, como pollo, cerdo y res, acompañada de papas fritas y salsas. $30.000</p><br>
+    
+      <h4>Soda refrescante</h4>
+      <p class="w3-text-grey">Disfruta de una variedad de sodas frías para acompañar tu comida. Tenemos opciones clásicas y sabores especiales. $8.000</p><br>
+    
+      <h4>Parrilla del chef</h4>
+      <p class="w3-text-grey">Una selección de las mejores carnes a la parrilla, como costillas de cerdo, chorizos y pollo marinado. Acompañada de vegetales a la parrilla y papas asadas. $45.000</p><br>
+    
+      <h4>Cervezas artesanales</h4>
+      <p class="w3-text-grey">Descubre nuestra selección de cervezas artesanales locales e internacionales para disfrutar junto a tu comida. $8.000</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="imgs/menu.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contacto</h1><br>
+    <p>¡Nos encantaría saber de ti!
+
+Si tienes alguna pregunta, sugerencia o simplemente quieres saludarnos, no dudes en ponerte en contacto con nosotros. Estamos aquí para atenderte.
+
+Puedes encontrarnos en nuestra ubicación en Envigado, o si lo prefieres, también puedes llamarnos o enviarnos un correo electrónico. ¡Estaremos encantados de escucharte!</p>
+    <p class="w3-text-blue-grey w3-large"><b>Restaurante, Cl. 40 Sur # 46A - 2A, Envigado, Antioquia</b></p>
+    <p>Teléfono: +57 316 4566100. Correo electrónico: info@40street.com</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nombre" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="¿Cuántas personas?" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Mensaje"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">Enviar</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+</footer>
+
+</body>
+</html>
