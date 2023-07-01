@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
   letter-spacing: 5px;
 }
+#map {
+  width: 100%;
+  height: 300px; /* Ajusta la altura del mapa según tus necesidades */
+}
 </style>
 </head>
 <body>
@@ -165,12 +169,38 @@ h1, h2, h3, h4, h5, h6 {
     no dudes en ponerte en contacto con nosotros. Estamos aquí para atenderte. Puedes encontrarnos en nuestra ubicación en Envigado, 
     o si lo prefieres, también puedes llamarnos o enviarnos un correo electrónico. ¡Estaremos encantados de escucharte!</p>
     <p class="w3-row w3-container w3-padding-64 w3-text-blue-grey w3-large"><b>40 Street, Cl. 40 Sur # 46A - 2A, Alcalá - Envigado, Antioquia</b></p>
+    <div id="map"></div>
     
     <a href="https://wa.me/573164566100" target="_blank">
     <button style="background-color: black; color: white;">Reservar ahora</button>
     </a>
   </div>
-  
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY"></script>
+  <script>
+    function initMap() {
+      var location = {lat: 40.712776, lng: -74.005974}; // Coordenadas de la ubicación en el mapa
+
+      // Crea el mapa y lo muestra en el elemento con el id "map"
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: location,
+        zoom: 15 // Ajusta el nivel de zoom según tus necesidades
+      });
+
+      // Crea un marcador en la ubicación especificada
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        title: 'Nuestra ubicación'
+      });
+    }
+  </script>
+  <!-- Llama a la función initMap cuando se cargue la página -->
+  <script>
+    window.onload = function() {
+      initMap();
+    };
+  </script>
 <!-- End page content -->
 </div>
 </body>
